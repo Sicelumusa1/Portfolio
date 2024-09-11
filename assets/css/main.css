@@ -17,4 +17,16 @@ html, body {
 
 * {
   color: #fff;
+}
+
+main {
+  padding-left: 104px;
+}
+main > section {
+  display: none;
+  padding-right: 114px;
+  padding-left: 114px;
+}
+main > section.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

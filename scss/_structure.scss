@@ -1,0 +1,14 @@
+// Page Styles
+main {
+  padding-left: 104px;
+
+  > section {
+    display: none;
+    padding-right: 114px;
+    padding-left: 114px;
+
+    &.active {
+      display: block;
+    }
+  }
+}
