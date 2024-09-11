@@ -36,6 +36,49 @@ main > section {
 main > section.active {
   display: block;
 }
+main hr {
+  padding-right: 114px;
+  padding-left: 114px;
+  stop-color: #e63946;
+}
+main .socials {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-right: 114px;
+  padding-left: 114px;
+}
+main .socials ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+main .socials ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+main .socials ul li a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 9px 11px;
+  transition: all 0.3s;
+}
+main .socials ul li a:hover {
+  background: #1d3557;
+  border-radius: 6px;
+}
+main .socials ul li a:hover span, main .socials ul li a:hover i {
+  color: #fff;
+}
+main .socials ul li a i {
+  padding-right: 8px;
+  font-size: 18px;
+  color: #f1faee;
+}
+main .socials ul li a span {
+  color: #f1faee;
+}
 
 .customise-btn {
   position: relative;
@@ -101,7 +144,7 @@ main > section.active {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-align: center;
-  transition: transform 0.3s ease, writing-mode 0.3s ease;
+  transition: transform 0.5s ease, writing-mode 0.5s ease;
 }
 #sidebar ul li a span:hover {
   writing-mode: horizontal-tb;
