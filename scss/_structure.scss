@@ -12,9 +12,12 @@ main {
     }
   }
   hr {
-    padding-right: 114px;
-    padding-left: 114px;
-    stop-color: #e63946;
+    margin-right: 114px;
+    margin-left: 114px;
+    border: none;
+    border-top: 1px solid #967aa1;
+    height: 0;
+    opacity: 1;
   }
 
   .socials {
