@@ -1,0 +1,40 @@
+#sidebar {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+      li {
+        position: relative;
+        margin-bottom: 35px;
+        a {
+          text-decoration: none;
+          span {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            text-align: center;
+            transition: transform 0.3s ease, writing-mode 0.3s ease;
+
+            &:hover {
+              writing-mode: horizontal-tb;
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+  }   
+}
