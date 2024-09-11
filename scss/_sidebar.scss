@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  border-right: 1px solid #e63946;
   
   nav {
     height: 100%;
@@ -11,6 +12,7 @@
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
+    
   }
 
 
