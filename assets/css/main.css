@@ -15,7 +15,7 @@ h1 {
   font-weight: 700;
 }
 
-p, a {
+p {
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -189,14 +189,14 @@ main .socials ul li a span {
 }
 #about_me .intro .study-field h2 {
   margin: 0;
-  color: #967aa1;
+  color: #462752;
   height: 1em;
 }
 #about_me .intro .study-field span {
   font-size: 18px;
 }
 #about_me .intro p {
-  max-width: 350px;
+  max-width: 450px;
   margin-bottom: 50px;
   font-size: 14px;
 }
@@ -510,4 +510,119 @@ main .socials ul li a span {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+@media (max-width: 991px) {
+  #about_me .image {
+    justify-content: start;
+    height: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  #sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #967aa1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #sidebar nav {
+    margin-top: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #sidebar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  #sidebar nav ul li {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  #sidebar nav ul li a {
+    text-decoration: none;
+    width: 100%;
+  }
+  #sidebar nav ul li a span {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    text-align: center;
+  }
+  #sidebar nav ul li a span:hover {
+    text-decoration: underline;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2, h3,
+  h4 {
+    font-size: 14px;
+  }
+  main {
+    padding-left: 0;
+  }
+  main > section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  main hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #about_me .intro {
+    padding-top: 80px;
+  }
+  #about_me .intro p {
+    width: 100%;
+  }
+  #about_me .intro .study-field {
+    margin: 0px 0px 14px;
+  }
+}
+@media (max-width: 480px) {
+  #abaut_me .intro {
+    padding: 40px 12px 0;
+  }
+  .socials ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .socials ul li a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    padding: 9px 11px;
+    transition: all 0.3s;
+  }
+  .socials ul li a:hover {
+    background: #1d3557;
+    border-radius: 6px;
+  }
+  .socials ul li a:hover span, .socials ul li a:hover i {
+    color: #fff;
+  }
+  .socials ul li a i {
+    padding-right: 8px;
+    font-size: 18px;
+    color: #f1faee;
+  }
+  .socials ul li a span {
+    color: #f1faee;
+  }
 }/*# sourceMappingURL=main.css.map */
