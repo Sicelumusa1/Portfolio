@@ -1,13 +1,13 @@
 #contact_me {
   height: 90vh;
-
-  h1 {
-    text-align: center;
-    margin-top: 5%;
-  }
-
   .container {
+    .contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
+    margin-bottom: 20px;
+  }
     ul {
       list-style: none;
       margin: 0;
