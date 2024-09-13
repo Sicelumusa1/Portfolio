@@ -32,3 +32,26 @@ function eMail(){
   }
   emailjs.send('service_o2ncz9q', 'template_vi19chb', parms).then(alert('Message sent!'))
 }
+
+//Projects Cards
+document.addEventListener('DOMContentLoaded', () => {
+  const filterLinks = document.querySelectorAll('.filter');
+  const projectsCards = document.querySelectorAll('.project-card');
+
+  filterLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const category = link.dataset.category;
+
+      projectsCards.forEach((card) => {
+        const cardCategories = card.dataset.category;
+        if (category === 'all' || cardCategories === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
