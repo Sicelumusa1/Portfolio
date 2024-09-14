@@ -628,9 +628,6 @@ main .socials ul li a span {
   #contact_me {
     height: 100vh;
   }
-  #contact_me .container {
-    margin-bottom: 20px;
-  }
   #my_work .project-card {
     padding: 0;
   }
